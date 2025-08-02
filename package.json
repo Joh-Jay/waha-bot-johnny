@@ -1,0 +1,12 @@
+{
+  "name": "waha-bot-johnny",
+  "version": "1.0.0",
+  "description": "Assistente pessoal no WhatsApp com IA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.76.0"
+  }
+}
