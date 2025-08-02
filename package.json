@@ -1,0 +1,13 @@
+
+{
+  "name": "waha-bot-johnny",
+  "version": "1.0.0",
+  "description": "WAHA bot para uso pessoal com QR Code e mensagens automáticas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.76.0"
+  }
+}
