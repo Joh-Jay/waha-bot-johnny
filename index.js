@@ -8,10 +8,9 @@ create({
     headless: true,
     logConsole: true,
     devtools: false,
-    popup: true,
-    useChrome: false, // ❗️DESLIGADO o uso do Google Chrome
-    executablePath: null, // ❗️GARANTE que ele use o Chromium padrão
-    disableSpins: false,
+    popup: false,
+    useChrome: false, // ⚠️ ISSO É O MAIS IMPORTANTE
+    disableSpins: true,
     disableWelcome: true,
     cacheEnabled: false
 }).then(client => start(client));
@@ -19,7 +18,7 @@ create({
 function start(client) {
     console.log("Bot iniciado com sucesso.");
     client.onMessage(async message => {
-        if (message.body.toLowerCase() === 'oi') {
+        if (message.body.toLowerCase().includes("oi")) {
             await client.sendText(message.from, 'Olá! Como posso te ajudar hoje?');
         }
     });
